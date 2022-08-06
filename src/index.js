@@ -145,7 +145,7 @@ function Progression4() {
           Plus (+)
         </button>
         <button
-          onClick={() => setCount(count+1)}
+          onClick={() => setCount(count-1)}
         >
           Minus (-)
         </button>
@@ -157,7 +157,6 @@ function Progression4() {
 
 function Progression5() {
   const [age, setAge] = useState(0)
-  const [val, setVal] = useState(1)
   const handleClick = () => setAge(age + 1)
 
   useEffect(() =>{
